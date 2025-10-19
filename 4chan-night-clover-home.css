@@ -1,4 +1,4 @@
-/* === 4chan Night Clover === */
+/* === 4chan Homepage Dark Mode (ChatGPT-Inspired Refined Edition) === */
 
 /* Page background */
 body {
@@ -111,8 +111,26 @@ div[style*="fade.png"],
   display: none !important;
   visibility: hidden !important;
 }
-#logo {
-  content: url("https://your-cdn-or-server.com/your-logo.png") !important;
+#logo-fp {
+  content: url("https://raw.githubusercontent.com/TechLovin/4chanNightClover/refs/heads/main/logo-transparent.png") !important;
   width: auto; /* optional: adjust width */
   height: auto; /* optional: adjust height */
+}
+/* Make the board container flexbox to prevent wrapping */
+.boxcontent {
+  display: flex !important;
+  flex-wrap: nowrap !important; /* prevent columns from wrapping to next line */
+  justify-content: space-between !important; /* space out columns evenly */
+  gap: 12px !important; /* optional: space between columns */
+}
+
+/* Ensure each column takes proportional width */
+.boxcontent .column {
+  flex: 1 1 0 !important; /* allow columns to expand equally */
+  min-width: 0 !important; /* prevent overflow due to content */
+}
+
+/* Optional: adjust the board container width */
+.board, .box {
+  width: auto !important; /* expand to fit content */
 }
