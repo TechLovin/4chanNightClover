@@ -1,0 +1,118 @@
+/* === 4chan Night Clover === */
+
+/* Page background */
+body {
+  background-color: #121212 !important;
+  color: #e6e6e6 !important;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Board columns */
+.column {
+  background-color: transparent !important;
+  margin: 0 6px !important; /* tighter spacing between columns */
+  padding: 0 !important;
+}
+
+/* Board section containers */
+.board, .boxcontent, .box {
+  background-color: #1e1e1e !important;
+  border: 1px solid #2a2a2a !important;
+  border-radius: 10px !important;
+  padding: 12px 14px !important;
+  margin: 6px 0 !important; /* reduce vertical spacing */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Board hover effect */
+.board:hover, .boxcontent:hover, .box:hover {
+  background-color: #232323 !important;
+  border-color: #305a22 !important; /* subtle green border accent */
+  box-shadow: 0 0 8px rgba(0, 255, 128, 0.25);
+}
+
+/* Board titles (e.g., "Video Games", "Interests") */
+.boxbar, .boardTitle, h2, h3 {
+  color: #82b1ff !important;
+  border-bottom: 1px solid #2a2a2a !important;
+  padding-bottom: 4px !important;
+  margin-bottom: 8px !important;
+}
+
+/* Board links (/wg/, /v/, /pol/, etc.) */
+.boardlink, .boxcontent a, .column a {
+  color: #00c853 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+.boardlink:hover, .boxcontent a:hover, .column a:hover {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+/* Announcement, news, and sitewide messages */
+.announcement, .newsbox, .globalMessage {
+  background-color: #181818 !important;
+  border: 1px solid #2a2a2a !important;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #ccc !important;
+}
+
+/* Footer */
+#footer {
+  background-color: #181818 !important;
+  color: #999 !important;
+  border-top: 1px solid #222 !important;
+  padding: 10px 0;
+}
+
+/* Scrollbar to match thread view */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00c853;
+}
+.top-box {
+  background: #121212;
+}
+.boxbar {
+  background: #060;
+}
+.boxbar, .boardTitle, h2, h3 {
+  color: #fff !important;
+  border-bottom: 0px solid !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+.box-outer {
+  border: 0px solid;
+  zoom: 100%;
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+}
+/* Remove specific background image */
+div[style*="fade.png"], 
+* {
+  background-image: none !important;
+}
+/* Hide the div with id="ft" */
+#ft {
+  display: none !important;
+  visibility: hidden !important;
+}
+#logo {
+  content: url("https://your-cdn-or-server.com/your-logo.png") !important;
+  width: auto; /* optional: adjust width */
+  height: auto; /* optional: adjust height */
+}
